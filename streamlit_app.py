@@ -39,14 +39,7 @@ try:
     back_from_function = get_fruityvice_data(fruit_choice)
     streamlit.dataframe(back_from_function)
     
-    
-
-    
-  
-
-
-
-# import requests
+ # import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
 
 # take the json version of the data and normalize it
