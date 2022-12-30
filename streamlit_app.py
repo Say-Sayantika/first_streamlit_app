@@ -40,7 +40,7 @@ try:
     streamlit.dataframe(back_from_function)
     
  # import requests
-fruityvice_response = requests.get(f"https://fruityvice.com/api/fruit/{fruit_choice}")
+fruityvice_response = get_fruityvice_data(fruit_choice)
 
 # take the json version of the data and normalize it
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
