@@ -40,13 +40,13 @@ try:
     streamlit.dataframe(back_from_function)
     
  # import requests
-fruityvice_response = get_fruityvice_data(fruit_choice)
+#fruityvice_response = get_fruityvice_data(fruit_choice)
 
 # take the json version of the data and normalize it
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # output it the screen as a table
 streamlit.dataframe(fruityvice_normalized)
- import snowflake.connector
+import snowflake.connector
 # dont run past here
 streamlit.stop()
 
